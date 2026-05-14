@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Ulises - Portafolio Profesional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+
+    <header>
+        <div class="header-container">
+            <h1>Omar Ulises</h1>
+            <div class="header-controls">
+                <button id="theme-toggle" aria-label="Cambiar tema oscuro/claro">🌙</button>
+                <button id="menu-toggle" class="hamburger-btn" aria-label="Abrir menú">☰</button>
+            </div>
+        </div>
+        <nav id="main-nav" class="nav-hidden">
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <img src="https://via.placeholder.com/150" alt="Foto de perfil de Omar" class="profile-img">
+            <p>Estudiante de Ingeniería en Sistemas y Electrónica con un fuerte enfoque en el desarrollo de software, la implementación de inteligencia artificial y la integración con hardware. Apasionado por encontrar soluciones eficientes y con miras a desarrollarme en la ingeniería de telemetría.</p>
+        </section>
+
+        <section id="educacion">
+            <h2>Historial Educativo</h2>
+            <ol>
+                <li><strong>Universidad Autónoma de Ciudad Juárez (UACJ)</strong> - Ingeniería en Sistemas y Electrónica (Actualmente cursando).</li>
+                <li><strong>Cisco Networking Academy</strong> - Fundamentos de Redes.</li>
+                <li><strong>Universidad Python</strong> - Curso integral de programación.</li>
+            </ol>
+        </section>
+
+        <section id="habilidades">
+            <h2>Tecnologías Dominadas</h2>
+            <dl>
+                <dt>Backend & IA</dt>
+                <dd>Python, Redes Neuronales, Clasificadores Softmax, Node.js.</dd>
+                
+                <dt>Sistemas Embebidos</dt>
+                <dd>Microcontroladores (PIC16F84A, ESP32-S3), LabVIEW, Multisim.</dd>
+
+                <dt>Bases de Datos</dt>
+                <dd>PostgreSQL, SQL.</dd>
+
+                <dt>Frontend</dt>
+                <dd>HTML5 Semántico, CSS3 (Flexbox/Grid), JavaScript.</dd>
+            </dl>
+        </section>
+
+        <section id="proyectos">
+            <h2>Galería de Proyectos</h2>
+            <div class="projects-gallery">
+                <article class="project-card">
+                    <h3>Clasificador Multiclase</h3>
+                    <p>Implementación de un modelo de machine learning en Python utilizando redes neuronales para la clasificación de datos complejos.</p>
+                    <a href="#">Ver código</a>
+                </article>
+                <article class="project-card">
+                    <h3>Monitor Web (Sockets)</h3>
+                    <p>Sistema de comunicación bidireccional utilizando conexiones TCP y manejo de paquetes JSON para monitoreo en tiempo real.</p>
+                    <a href="#">Ver proyecto</a>
+                </article>
+                <article class="project-card">
+                    <h3>Controlador ESP32</h3>
+                    <p>Integración de hardware y software para la gestión de sensores mediante microcontroladores e interfaces digitales.</p>
+                    <a href="#">Ver esquemáticos</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div id="form-alerts"></div>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                </div>
+                
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué te puedo ayudar?"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Omar Ulises. Preparado para desarrollo Full Stack.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
